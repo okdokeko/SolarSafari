@@ -1,1 +1,90 @@
 /*add styling and stuff here so it is reflected across all pages*/
+
+/* Color scheme variables */
+:root {
+    --color1: #FF0000;
+    --color2: #00FF00;
+    --color3: #0000FF;
+}
+
+body{
+    background-color: #6767ff;
+}
+
+
+header {
+    text-align: center;
+
+    margin-top: 5%;
+}
+
+h1 {
+    background: linear-gradient(to right, #e2bfff, #ffe6b0); /* Light gradient */
+    text-align: center;
+    width: 15%;
+    margin: 1% auto; /* Center the element horizontally and add margin */
+    padding: 1%;
+    border-radius: 1em; /* Rounded corners */
+}
+
+
+
+/* buttons */
+button {
+    background-color: #824caf;
+    border: none;
+    color: white;
+    padding: 1% 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    margin: .5%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 1em; /* Rounded corners */
+}
+button:hover {
+    background-color: #946fb3fa; 
+}
+
+/* Style for planet sections */
+#composition, #itinerary, #planet-info, #sightseeing {
+    background-color: #e6e6fa; /* Light Purple */
+    padding: 2em;
+    border-radius: 1em;
+}
+
+#planet-info{
+    text-align: center;
+}
+
+#sightseeing {
+    text-align: center;
+}
+
+#composition{
+    text-align: center;
+}
+
+#itinerary {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 3em;
+}
+
+p {
+    word-wrap: break-word;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto; 
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+table {
+    margin: 0 auto; 
+}
