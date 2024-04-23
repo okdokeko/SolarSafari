@@ -3,22 +3,186 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Sun</title>
+<title>Jupiter</title>
 <link rel="stylesheet" href="../css/style.css">
+<style>
+    body {
+        background-image: url('../img/jupiter.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    h2 {
+        text-align: center;
+    
+        margin-top: 5%;
+    }
+    #container {
+        display: flex; /* Use flexbox for layout */
+        flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+        justify-content: space-between; /* Distribute items evenly with space between */
+        align-items: flex-start; /* Align items at the top */
+        padding: 20px; /* Add padding for spacing */
+    }
+    #planet-info, #itinerary {
+        width: 45%; /* Set the width of each section */
+        margin-bottom: 20px; /* Add margin at the bottom for spacing */
+   
+    }
+    #trip-cost {
+        background-color: #e6e6fa;
+        padding: 2em;
+        border-radius: 1em;
+        width: 100%; /* Set the width to fill the container */
+        box-sizing: border-box; /* Include padding and border in the width */
+    }
+    #moons {
+        background-color: #e6e6fa;
+        padding: 2em;
+        border-radius: 1em;
+        width: 100%; /* Set the width to fill the container */
+        box-sizing: border-box; /* Include padding and border in the width */
+    }
+    /* Table styles */
+    .jupyter-itinerary-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .jupyter-itinerary-table th, .jupyter-itinerary-table td {
+        padding: 8px;
+        border-bottom: 1px solid black;
+    }
+    .jupyter-itinerary-table th {
+        color: black;
+        font-weight: bold;
+        border-bottom: 2px solid black;
+    }
+    .jupyter-itinerary-table tbody tr:nth-child(odd) {
+        background-color: #f5caaf;
+    }
+    .jupyter-itinerary-table tr:nth-child(even) {
+        background-color: #fad7c1;
+    }
+    .jupyter-itinerary-table tr:hover {
+        background-color: #f2f2f2;
+    }
+    #moons h3 {
+        text-align: center; /* Center align the header */
+        margin-bottom: 20px; /* Add margin below the header */
+    }
+    #moons p {
+        text-align: justify; /* Align text in paragraphs */
+    }
+</style>
 </head>
 <body>
     <header>
-        <h1>Planet Name</h1>
+        <h1>Jupiter</h1>
         <button onclick="location.href='../index.html';">Home</button>
     </header>
     <main>
-        <section id="planet-info">
-            <h2>About Planet</h2>
-            <p>Planet information goes here...</p>
-        </section>
-        <section id="trip-cost">
-            <h2>Trip Cost</h2>
-            <p>Cost details for the trip to the planet...</p>
+        <div id="container">
+            <section id="planet-info">
+                <h2>About Planet</h2>
+                <p style="text-align: justify;">In the boundless expanse of the cosmos, Jupiter reigns supreme as a celestial monarch, its colossal presence commanding awe and admiration. 
+                    Enveloped in swirling bands of vivid hues, Jupiter's atmosphere is a mesmerizing tapestry of turbulent storms and ever-shifting cloud formations, 
+                    painting the gas giant with an otherworldly beauty. Towering thunderheads, propelled by ferocious winds, create a dramatic display of atmospheric dynamics, 
+                    while the planet's iconic Great Red Spot, a swirling storm larger than Earth, serves as a testament to Jupiter's majestic power.
+                    <br>
+                    Indulge in the luxury of orbital resorts, offering panoramic views of Jupiter's majestic storms and clouds. Delight in exquisite dining featuring ingredients from across the solar system,
+                     and immerse yourself in Jupiter's rich cultural heritage, from ancient myths to cutting-edge science.
+                     <br>
+                     Experience the mesmerizing spectacle of Jupiter's auroras, casting vibrant hues of red, blue, and green across the sky. As you bid farewell to Jupiter and its moons, carry with you the unforgettable memories of a voyage through the solar system destined to be etched in history.
+                </p>
+                <video width="400" controls autoplay muted>
+                    <source src="../img/jupiter.mp4" type="video/mp4">
+                </video>
+            </section>
+            <section id="itinerary">
+                <h2>Itinerary</h2>
+                <table class="jupyter-itinerary-table">
+                    <thead>
+                        <tr>
+                            <th>Duration</th>
+                            <th>Activity</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2 years</td>
+                            <td>Gravity Assist travel in cryo sleep</td>
+                            <td>Solar System</td>
+                        </tr>
+                        <tr>
+                            <td>1 month</td>
+                            <td>Arrival and check-in at luxury orbital resort</td>
+                            <td>Jupiter Orbit</td>
+                        </tr>
+                        <tr>
+                            <td>2 weeks</td>
+                            <td>Enjoying panoramic views of Jupiter from resort</td>
+                            <td>Jupiter Orbit</td>
+                        </tr>
+                        <tr>
+                            <td>1 week</td>
+                            <td>Excursion to the breathtaking sulfur geysers of Io</td>
+                            <td>Io Surface</td>
+                        </tr>
+                        <tr>
+                            <td>1 week</td>
+                            <td>Relaxing on the icy shores and exploring Europa's mysteries</td>
+                            <td>Europa Surface</td>
+                        </tr>
+                        <tr>
+                            <td>1 week</td>
+                            <td>Safari-style tour of Callisto's stunning ice formations</td>
+                            <td>Callisto Surface</td>
+                        </tr>
+                        <tr>
+                            <td>2 weeks</td>
+                            <td>Indulging in fine dining and entertainment at the resort</td>
+                            <td>Jupiter Orbit</td>
+                        </tr>
+                        <tr>
+                            <td>2 days</td>
+                            <td>Ride the Jupiter Swirl - A thrilling journey through Jupiter's Great Red Spot</td>
+                            <td>Jupiter Atmosphere</td>
+                        </tr>
+                        <tr>
+                            <td>2 years</td>
+                            <td>Return journey to Earth in cryo sleep</td>
+                            <td>Solar System</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </section>
+        </div>
+        <section id="moons">
+            <h2>Moons</h2>
+            <p>Discover the moons of Jupiter...
+                <br>
+                <img src="../img/jupiterCallisto.jpg" alt="Callisto moon picture" width="250" height="250"> 
+                <img src="../img/jupiterEuropa.jpg" alt="Europa moon picture" width="250" height="250"> 
+                <img src="../img/JupitersIo.jpg" alt="IO moon picture" width="250" height="250"> 
+            </p>
+            <br>    
+            <div style="display: inline-block; width: 30%; vertical-align: top;">
+                <h3>Io</h3>
+                <p>The innermost of Jupiter's Galilean moons, Io is a world of fire and fury. Its surface is scarred by relentless volcanic activity, painting its landscape with vibrant hues of red, orange, and yellow. Visitors to Io will witness towering volcanic plumes erupting into space, casting a fiery glow across the moon's sulfurous surface.</p>
+            </div>
+            
+            <div style="display: inline-block; width: 30%; vertical-align: top;">
+                <h3>Europa</h3>
+                <p>Europa, the icy moon of Jupiter, beckons with its enigmatic beauty. Its surface is crisscrossed by a network of dark streaks and fractures that hint at the hidden ocean beneath its frozen crust. Explore the enigmatic depths of Europa's subsurface ocean and marvel at the intricate patterns etched into the moon's icy terrain by the forces of tidal flexing.</p>
+            </div>
+            
+            <div style="display: inline-block; width: 30%; vertical-align: top;">
+                <h3 >Callisto</h3>
+                <p>Callisto, with its worn surface covered in many impact craters, is a monument to the early history of the solar system. Discover the mysteries of Callisto's distant past as you hike over its untamed terrain and imposing mountain ranges. Take in the mesmerizing views of Jupiter, which sits low on the horizon and casts a warm, golden glow across the moon's barren plains.</p>
+            </div>
+            
+            
         </section>
     </main>
 </body>
