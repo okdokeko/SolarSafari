@@ -27,6 +27,14 @@ h1 {
     border-radius: 1em; /* Rounded corners */
 }
 
+h2 {
+    text-decoration: underline;
+    text-align: center;
+    width: 15%;
+    margin: 1% auto; /* Center the element horizontally and add margin */
+    padding: 1%;
+}
+
 
 
 /* buttons */
