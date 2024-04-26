@@ -28,7 +28,7 @@ scene.background = starField;
 
 // Load texture for the sphere
 const textureLoader = new THREE.TextureLoader();
-const neptuneTexture = textureLoader.load("../img/neptuneTexture.jpeg");
+const neptuneTexture = textureLoader.load("../img/neptuneTexture.jpg");
 
 const geometry = new THREE.SphereGeometry(1, 32, 32);
 const material = new THREE.MeshStandardMaterial({
