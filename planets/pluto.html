@@ -13,10 +13,23 @@
     }
     span {
         font-weight: bold; 
+    }  
+
+    .header h1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0; /* Remove default margin of h1 element */
+        font-size: 24px; /* Adjust font size as needed */
+        font-weight: bold; /* Adjust font weight as needed */
+        color: #000000; /* Set text color as needed */
     }
 </style>
 </head>
 <body>
+    <div class="header">
+        <h1>Solar Safari</h1>
+    </div>
     <header>
         <h1>Pluto</h1>
         <button onclick="location.href='../index.html';">Home</button>
@@ -34,6 +47,49 @@
             <p>
                 Embark on the ultimate adventure and witness the awe-inspiring beauty of Pluto firsthand. 
                 A journey to Pluto promises an unforgettable <span style="color: #824caf">solar safari</span> experience unlike any other, offering a chance to explore the outer reaches of our solar system and discover the wonders of this distant planet.
+            </p>
+        </section>
+        <section id="planet-info">
+            <h2>Pluto and Charon</h2>
+            <p>
+                <img id="charonPlutoImg" src="../img/charon_pluto.jpg" alt="Charon and Pluto" width="300" height="300">
+                
+                <!-- JavaScript code -->
+                <script>
+                    // Get a reference to the image element
+                    const img = document.getElementById('charonPlutoImg');
+                    
+                    // Set initial position and direction
+                    let positionY = 0;
+                    let direction = 1; // 1 for moving down, -1 for moving up
+                    
+                    // Function to animate the image
+                    function animateImage() {
+                      // Move the image by changing its top position
+                      img.style.top = positionY + 'px';
+                      
+                      // Update position for next animation frame
+                      positionY += direction;
+                      
+                      // Reverse direction if reaching the limits
+                      if (positionY >= 10 || positionY <= -10) {
+                        direction *= -1;
+                      }
+                      
+                      // Call animateImage again for smooth animation
+                      requestAnimationFrame(animateImage);
+                    }
+                    
+                    // Start the animation
+                    animateImage();
+                  </script>
+                <br>
+                <br>
+                Charon <span style ="font-size: 0.7em;">(Top left in the image above)</span> is the <span style ="font-size: 1.1em;">largest</span> moon relative to its parent body in the solar system. It's so large compared to Pluto <span style ="font-size: 0.7em;">(Bottom right in the image above)</span> that some scientists refer to the two bodies as a double dwarf planet system rather than a planet-moon system.
+                Charon's surface exhibits several dark spots, the largest of which is informally named Mordor Macula. These dark regions are thought to be composed of complex organic compounds, possibly originating from the photolysis of methane on Charon's surface.
+                <br>
+                <br>
+                Pluto's other moons, including Styx, Nix, Hydra, Kerberos, and others, are much smaller than Pluto's largest moon, Charon, and are thought to be remnants of a collision between Pluto and another object in the distant past.
             </p>
         </section>
         <section id="trip-cost">
