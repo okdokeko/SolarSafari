@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="../img/mercury.jfif">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Sun</title>
+<title>Mercury</title>
 <link rel="stylesheet" href="../css/style.css">
 <style>
     body {
@@ -12,6 +13,10 @@
         background-repeat: no-repeat; /* Prevent the image from repeating */
         background-position: center; /* Center the image */
         background-attachment: fixed; /* Fixed background */
+        padding: 0; /* Reset default body padding */
+        display: flex; /* Use flexbox layout */
+        flex-direction: column; /* Stack children vertically */
+        min-height: 100vh;
     }
     section {
         background-color: #e6e6fa;
@@ -31,6 +36,16 @@
         flex-direction: column;
         justify-content: center;
 
+    }
+
+    .header h1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0; /* Remove default margin of h1 element */
+        font-size: 24px; /* Adjust font size as needed */
+        font-weight: bold; /* Adjust font weight as needed */
+        color: #000000; /* Set text color as needed */
     }
 
     .a-text {
@@ -75,10 +90,69 @@
         background-color:azure
     }
 
+    /*Info stuff*/
+    #final-row {
+        display: flex;
+        background: rgba(0, 0, 255, 0);
+        padding: 2%;
+        margin: 2%;
+        border-radius: 1em;
+        gap: 5em;
+    }
+
+    #final-row > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .info-text {
+        flex: 1;
+        background-color:#e6e6fa;
+        padding: 2em;
+        border-radius: 1em;
+
+    }
+
+    .itinerary-text {
+        flex: 1;
+        padding: 2em;
+        background-color:#e6e6fa;
+        border-radius: 1em;
+    }
+
+    /* Table styles */
+    .jupyter-itinerary-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .jupyter-itinerary-table th, .jupyter-itinerary-table td {
+        padding: 8px;
+        border-bottom: 1px solid black;
+    }
+    .jupyter-itinerary-table th {
+        color: black;
+        font-weight: bold;
+        border-bottom: 2px solid black;
+    }
+    .jupyter-itinerary-table tbody tr:nth-child(odd) {
+        background-color: #f5caaf;
+    }
+    .jupyter-itinerary-table tr:nth-child(even) {
+        background-color: #fad7c1;
+    }
+    .jupyter-itinerary-table tr:hover {
+        background-color: #f2f2f2;
+    }
+
 
 </style>
 </head>
 <body>
+    <div class="header">
+        <h1>Solar Safari</h1>
+    </div>
     <header>
         <h1>Mercury</h1>
         <button onclick="location.href='../index.html';">Home</button>
@@ -127,6 +201,81 @@
                 </video>
             </div>
         </section>
+
+        <section id="final-row">
+            <div class="info-text">
+                <h2>Trip Cost</h2>
+                <p style="text-align: left; font: 16pt blue; display: flex;">
+                    <ul>
+                        <li>Travel Duration: 3 Months</li>
+                        <li>Cost: $100 Million per person</li>
+                        <li>Inclusions: Accommodation, meals, excursions, entertainment, and a lot of fun!</li>
+                        <li>Optional Add-ons: Polar ice-cap Nordic Skiing, Mercurial Mining Adventures, and a return trip</li>
+                    </ul>
+                    <br>
+                    Book your once-in-a-lifetime journey to Mercury today and embark on an unforgettable adventure through the solar system.
+
+                </p>    
+            </div>
+            <div class="itinerary-text">
+                <h2>Trip Itinerary</h2>
+                <table class="jupyter-itinerary-table">
+                    <thead>
+                        <tr>
+                            <th>Duration</th>
+                            <th>Activity</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>40 days</td>
+                            <td>Space Travel with ammenities</td>
+                            <td>Solar System</td>
+                        </tr>
+                        <tr>
+                            <td>2 days</td>
+                            <td>Arrival and check-in at luxury orbital resort</td>
+                            <td>Mercury Orbit</td>
+                        </tr>
+                        <tr>
+                            <td>4 days</td>
+                            <td>Enjoy scenic views of Mercury's craters from the Orbital resort</td>
+                            <td>Mercury Orbit</td>
+                        </tr>
+                        <tr>
+                            <td>2 days</td>
+                            <td>Exploration of all notable craters</td>
+                            <td>Mercury Surface</td>
+                        </tr>
+                        <tr>
+                            <td>1 day</td>
+                            <td>Ride the Scarp coaster through the sheer cliffs of Mercury's surface</td>
+                            <td>Mercury Surface</td>
+                        </tr>
+                        <tr>
+                            <td>1 day</td>
+                            <td>Engage in an exciting lava-walk on the boiling surface</td>
+                            <td>Mercury Surface</td>
+                        </tr>
+                        <tr>
+                            <td>3 days</td>
+                            <td>Recover from your exciting Mercury adventures and say one final goodbye</td>
+                            <td>Mercury Orbit</td>
+                        </tr>
+                        <tr>
+                            <td>40 days</td>
+                            <td>Return journey to Earth with ammenities</td>
+                            <td>Solar System</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+
+
+            </div>
+
+        </section>
     </main>
     <script>
         function imagefun() {
@@ -138,6 +287,24 @@
                 Image_Id.src = "../img/mercury.jpg";
             }
         }
+    </script>
+
+    <footer>
+        <p>Email: <a href="mailto:solarsafarihelp@solarsafari.com">solarsafarihelp@solarsafari.com</a></p>
+        <p>Last Updated: <span id="currentDate"></span></p>
+        <p>Social media: @solarsafari</p>
+    </footer>
+
+    <script>
+        // Get current date and format it
+        const currentDate = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        
+        // Set current date to the element with id "currentDate"
+        document.getElementById('currentDate').textContent = currentDate;
     </script>
 
 </body>
