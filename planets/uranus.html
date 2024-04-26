@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uranus</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+    body {
+        background-image: url('../img/uranus.jpg');
+        background-size: cover; /* Cover the entire background */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-position: center; /* Center the image */
+        background-attachment: fixed; /* Fixed background */
+        padding: 0; /* Reset default body padding */
+        display: flex; /* Use flexbox layout */
+        flex-direction: column; /* Stack children vertically */
+        min-height: 100vh;
+    }
+
+    .header h1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0; /* Remove default margin of h1 element */
+        font-size: 24px; /* Adjust font size as needed */
+        font-weight: bold; /* Adjust font weight as needed */
+        color: #000000; /* Set text color as needed */
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>Solar Safari</h1>
+    </div>
+    <header>
+        <h1>Uranus</h1>
+        <button onclick="location.href='../index.html';">Home</button>
+    </header>
+    <main>
+        <section id="planet-info">
+            <h2>About Planet</h2>
+            <p>Planet information goes here...</p>
+        </section>
+        <section id="trip-cost">
+            <h2>Trip Cost</h2>
+            <p>Cost details for the trip to the planet...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Email: <a href="mailto:solarsafarihelp@solarsafari.com">solarsafarihelp@solarsafari.com</a></p>
+        <p>Last Updated: <span id="currentDate"></span></p>
+        <p>Social media: @solarsafari</p>
+    </footer>
+
+    <script>
+        // Get current date and format it
+        const currentDate = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        
+        // Set current date to the element with id "currentDate"
+        document.getElementById('currentDate').textContent = currentDate;
+    </script>
+</body>
+</html>
