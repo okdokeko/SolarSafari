@@ -56,7 +56,7 @@ button:hover {
 }
 
 /* Style for planet sections */
-#composition, #itinerary, #planet-info, #sightseeing {
+#composition, #itinerary, #planet-info, #sightseeing, #trip-cost {
     background-color: #e6e6fa; /* Light Purple */
     padding: 2em;
     border-radius: 1em;
