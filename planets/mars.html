@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Sun</title>
-<link rel="stylesheet" href="../css/style.css">
+    <meta charset="utf-8">
+    <title>Mars</title>
+    <style>
+        body { margin: 0; }
+    </style>
+    <link rel="stylesheet" href="../css/mars.css">
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.164/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+          }
+        }
+      </script>
 </head>
 <body>
-    <header>
-        <h1>Planet Name</h1>
-        <button onclick="location.href='../index.html';">Home</button>
-    </header>
-    <main>
-        <section id="planet-info">
-            <h2>About Planet</h2>
-            <p>Planet information goes here...</p>
-        </section>
-        <section id="trip-cost">
-            <h2>Trip Cost</h2>
-            <p>Cost details for the trip to the planet...</p>
-        </section>
-    </main>
+<script type="module" src="../js/mars.js"></script>
 </body>
+
 </html>
