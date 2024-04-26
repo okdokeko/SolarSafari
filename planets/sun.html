@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Sun</title>
 <link rel="stylesheet" href="../css/style.css">
+<style>
+    body {
+        padding: 0; /* Reset default body padding */
+        display: flex; /* Use flexbox layout */
+        flex-direction: column; /* Stack children vertically */
+        min-height: 100vh;
+    }
+</style>
 </head>
 <body>
     <header>
@@ -55,5 +63,23 @@
             </table>
         </section>
     </main>
+
+    <footer>
+        <p>Email: <a href="mailto:solarsafarihelp@solarsafari.com">solarsafarihelp@solarsafari.com</a></p>
+        <p>Last Updated: <span id="currentDate"></span></p>
+        <p>Social media: @solarsafari</p>
+    </footer>
+
+    <script>
+        // Get current date and format it
+        const currentDate = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        
+        // Set current date to the element with id "currentDate"
+        document.getElementById('currentDate').textContent = currentDate;
+    </script>
 </body>
 </html>
