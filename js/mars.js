@@ -1,4 +1,4 @@
-import * as THREE from "three";
+import * as THREE from 'three';
 
 // Create WebGLRenderer with antialiasing
 const renderer = new THREE.WebGLRenderer({ antialias: true });
