@@ -40,6 +40,8 @@
     }
 
     .a-image {
+        padding: 2em;
+
         display: flex;
         flex: 1;
         flex-direction: row;
@@ -103,19 +105,20 @@
                 </p>    
             </div>
             <div class="a-image">
-                    <img src="../img/mercury.jpg" alt="Chemical lens mercury" width=20%>
-                    <img src="../img/mercury.jfif" alt="Normal Mercury" width=20%>
+                    <img src="../img/mercury.jpg" alt="Chemical lens mercury" width=100% id="getImage">
             </div>
+            <div>
+                <input type="button" onclick="imagefun()" value="Swap Image">
+            </div>
+        
         </section>
 
         <section id="orbit-container">
             <div class="orbit-text">
                 <h2>Mercury's Orbit</h2>
-                <p style="text-align: left; font: 16pt blue; display: flex;">Many people have wondered what this rocky planet will have in store for them. Well you're in luck! The Solar Safari cruise ship will take us sailing right
-                    on by for a once in a lifetime view! Here, you will get to experience the wonders of of a beutiful deep gray formed from the oceans of lava that spent millions of years cooling!
-                    Between that and the intricate white streaks formed from craters it is an awe inspiring sight! You will aslo get the chance to look through the lens of old Earth astronomers 
-                    using a special chemical map to portray chemical concententrations on the surface!
-
+                <p style="text-align: left; font: 16pt blue; display: flex;">Mercuty's orbit is one of the most chaotic in the solar system. With a highly eliptical path, bringing the planet around
+                    the sun in an oval. This causes Mercury to get very close to the sun when it reaches its perihelion and farther away at its aphelion. This is the main cause of the tempurature variation 
+                    mentioned earlier. In a way, Mercury has its own seasons! (Except summer is much hotter and winter is much colder!)
                 </p>    
             </div>
             <div class="orbit-video">
@@ -125,5 +128,17 @@
             </div>
         </section>
     </main>
+    <script>
+        function imagefun() {
+            var Image_Id = document.getElementById('getImage');
+            if (Image_Id.src.match("../img/mercury.jpg")) {
+                Image_Id.src = "../img/mercury.jfif";
+            }
+            else {
+                Image_Id.src = "../img/mercury.jpg";
+            }
+        }
+    </script>
+
 </body>
 </html>
