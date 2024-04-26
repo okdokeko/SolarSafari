@@ -12,14 +12,22 @@
         background-repeat: no-repeat; /* Prevent the image from repeating */
         background-position: center; /* Center the image */
         background-attachment: fixed; /* Fixed background */
+        margin: 0; /* Reset default body margin */
+        padding: 0; /* Reset default body padding */
+        display: flex; /* Use flexbox layout */
+        flex-direction: column; /* Stack children vertically */
+        min-height: 100vh; /* Ensure body stretches to at least the height of the viewport */
     }
     
-    
+    h1 {
+        text-align: center;
+    }
+
     h2 {
         text-align: center;
-    
         margin-top: 5%;
     }
+
     section {
         background-color: #e6e6fa;
         padding: 2em;
@@ -31,55 +39,71 @@
         text-align: center; /* Center the content */
         box-sizing: border-box;
     }
-    
 
     #moons {
         width: 100%; /* Set the width to fill the container */
         box-sizing: border-box; /* Include padding and border in the width */
     }
-    #trip-cost{        
+
+    #trip-cost {        
         width: 40%;
         margin-bottom: 20px;
         float: right;
     }
+
     #itinerary {
         width: 48%;
         margin-bottom: 20px;
         float: left;
-        
     }
-    /* Table styles */
+
     .jupyter-itinerary-table {
         width: 100%;
         border-collapse: collapse;
     }
+
     .jupyter-itinerary-table th, .jupyter-itinerary-table td {
         padding: 8px;
         border-bottom: 1px solid black;
     }
+
     .jupyter-itinerary-table th {
         color: black;
         font-weight: bold;
         border-bottom: 2px solid black;
     }
+
     .jupyter-itinerary-table tbody tr:nth-child(odd) {
         background-color: #f5caaf;
     }
+
     .jupyter-itinerary-table tr:nth-child(even) {
         background-color: #fad7c1;
     }
+
     .jupyter-itinerary-table tr:hover {
         background-color: #f2f2f2;
     }
+
     #moons h3 {
         text-align: center; /* Center align the header */
         margin-bottom: 20px; /* Add margin below the header */
     }
+
     #moons p {
         text-align: justify; /* Align text in paragraphs */
     }
+
     #moons img {
-       padding: 5px;
+        padding: 5px;
+    }
+
+    footer {
+        background: linear-gradient(to right, #e2bfff, #ffe6b0); /* Light gradient */
+        color: black;
+        text-align: center;
+        width: 100%;
+        margin-top: auto; /* Push footer to the bottom */
     }
 </style>
 </head>
@@ -130,9 +154,8 @@
                     <h3 >Callisto</h3>
                     <p>Callisto, with its worn surface covered in many impact. Discover the mysteries of Callisto's distant past as you hike over its untamed terrain and imposing mountain ranges. Take in the mesmerizing views of Jupiter, which sits low on the horizon and casts a warm, golden glow across the moon's barren plains.</p>
                 </div>
-                
-                
             </section>
+            
             <section id="itinerary">
                 <h2>Itinerary</h2>
                 <table class="jupyter-itinerary-table">
@@ -189,10 +212,10 @@
                             <td>Return journey to Earth in cryo sleep</td>
                             <td>Solar System</td>
                         </tr>
-                        
                     </tbody>
                 </table>
             </section>
+            
             <section id="trip-cost">
                 <h2>Trip Cost</h2>
                 <p>Experience the wonders of Jupiter and its moons with our exclusive travel package. 
@@ -208,7 +231,24 @@
                 </p>
             </section>
         </div>
-
     </main>
+
+    <footer>
+        <p>Email: <a href="mailto:solarsafarihelp@solarsafari.com">solarsafarihelp@solarsafari.com</a></p>
+        <p>Last Updated: <span id="currentDate"></span></p>
+        <p>Social media: @solarsafari</p>
+    </footer>
+
+    <script>
+        // Get current date and format it
+        const currentDate = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        
+        // Set current date to the element with id "currentDate"
+        document.getElementById('currentDate').textContent = currentDate;
+    </script>
 </body>
 </html>
