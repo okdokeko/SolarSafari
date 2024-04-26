@@ -5,21 +5,140 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Sun</title>
 <link rel="stylesheet" href="../css/style.css">
+<style>
+    body {
+        background-image: url('../img/mercury.jpg');
+        background-size: cover; /* Cover the entire background */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-position: center; /* Center the image */
+        background-attachment: fixed; /* Fixed background */
+    }
+    section {
+        background-color: #e6e6fa;
+        padding: 2em;
+        border-radius: 1em;
+    }
+
+    #a-view {
+        display: flex;
+        background-color: #e6e6fa;
+        float: right;
+        border-radius: 1em;
+    }
+
+    #a-view > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .a-text {
+        flex: 1;
+        padding: 1%;
+        background-color:azure
+    }
+
+    .a-image {
+        padding: 2em;
+
+        display: flex;
+        flex: 1;
+        flex-direction: row;
+    }
+
+    /*Orbit stuff*/
+    #orbit-container {
+        display: flex;
+        background-color: #e6e6fa;
+        padding: 2%;
+        margin: 2%;
+        border-radius: 1em;
+    }
+
+    #orbit-container > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .orbit-video {
+        justify-content: center;
+        padding: 2em;
+
+    }
+
+    .orbit-text {
+        flex: 1;
+        padding: 1%;
+        background-color:azure
+    }
+
+
+</style>
 </head>
 <body>
     <header>
-        <h1>Planet Name</h1>
+        <h1>Mercury</h1>
         <button onclick="location.href='../index.html';">Home</button>
     </header>
     <main>
         <section id="planet-info">
-            <h2>About Planet</h2>
-            <p>Planet information goes here...</p>
+            <h2>About Mercury</h2>
+            <p style="text-align: left; font: 16pt blue;">While Mercury may be smallest planet in our solar system, it cetainly does have a lot of character that sets it apart from all the other planets!
+            Mercury is the closest planet to our sun so it has tempuratures that reflect this. During the day (which lasts 29.5 days Earth time!) the surface can get as hot has 
+                <b>800 degrees F</b> or as cold as <b>-300 degrees F</b> during the nighttime.
+                Its surface is marked by rugged terrain, including towering cliffs and vast plains. Despite its small size, Mercury offers a wealth of geological wonders, 
+                providing valuable insights into the processes that shape planetary bodies. Studying Mercury not only sheds light on its own mysteries but also helps us understand the broader processes 
+                at work in our solar system. 
+                So, as we embark on our journey through the cosmos, let us marvel at the intriguing complexities of this nearby world and the lessons it holds for us as explorers of the universe!
+            </p>
         </section>
-        <section id="trip-cost">
-            <h2>Trip Cost</h2>
-            <p>Cost details for the trip to the planet...</p>
+        <section id="a-view">
+            <div class="a-text">
+                <h2>What does Mercury look like</h2>
+                <p style="text-align: left; font: 16pt blue; display: flex;">Many people have wondered what this rocky planet will have in store for them. Well you're in luck! The Solar Safari cruise ship will take us sailing right
+                    on by for a once in a lifetime view! Here, you will get to experience the wonders of of a beutiful deep gray formed from the oceans of lava that spent millions of years cooling!
+                    Between that and the intricate white streaks formed from craters it is an awe inspiring sight! You will aslo get the chance to look through the lens of old Earth astronomers 
+                    using a special chemical map to portray chemical concententrations on the surface!
+                </p>    
+            </div>
+            <div class="a-image">
+                    <img src="../img/mercury.jpg" alt="Chemical lens mercury" width=100% id="getImage">
+            </div>
+            <div>
+                <input type="button" onclick="imagefun()" value="Swap Image">
+            </div>
+        
+        </section>
+
+        <section id="orbit-container">
+            <div class="orbit-text">
+                <h2>Mercury's Orbit</h2>
+                <p style="text-align: left; font: 16pt blue; display: flex;">Mercuty's orbit is one of the most chaotic in the solar system. With a highly eliptical path, bringing the planet around
+                    the sun in an oval. This causes Mercury to get very close to the sun when it reaches its perihelion and farther away at its aphelion. This is the main cause of the tempurature variation 
+                    mentioned earlier. In a way, Mercury has its own seasons! (Except summer is much hotter and winter is much colder!)
+                </p>    
+            </div>
+            <div class="orbit-video">
+                <video width="500" controls autoplay muted>
+                    <source src="../img/mercury_orbit.mp4" type="video/mp4">
+                </video>
+            </div>
         </section>
     </main>
+    <script>
+        function imagefun() {
+            var Image_Id = document.getElementById('getImage');
+            if (Image_Id.src.match("../img/mercury.jpg")) {
+                Image_Id.src = "../img/mercury.jfif";
+            }
+            else {
+                Image_Id.src = "../img/mercury.jpg";
+            }
+        }
+    </script>
+
 </body>
 </html>

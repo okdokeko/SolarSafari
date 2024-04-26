@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "three": "^0.164.1"
+  },
+  "devDependencies": {
+  }
+}
