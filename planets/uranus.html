@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="icon" href="../img/uranus.jpg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Uranus</title>
@@ -27,6 +28,52 @@
         font-weight: bold; /* Adjust font weight as needed */
         color: #000000; /* Set text color as needed */
     }
+
+    #planet-info {
+        width: 100%;
+        text-align: center; /* Center the content */
+        box-sizing: border-box;
+    }
+
+    #trip-cost {        
+        width: 40%;
+        margin-bottom: 20px;
+        float: right;
+    }
+
+    #itinerary {
+        width: 48%;
+        margin-bottom: 20px;
+        float: left;
+    }
+
+    .uranus-itinerary-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .uranus-itinerary-table th, .uranus-itinerary-table td {
+        padding: 8px;
+        border-bottom: 1px solid black;
+    }
+
+    .uranus-itinerary-table th {
+        color: black;
+        font-weight: bold;
+        border-bottom: 2px solid black;
+    }
+
+    .uranus-itinerary-table tbody tr:nth-child(odd) {
+        background-color: #f5caaf;
+    }
+
+    .uranus-itinerary-table tr:nth-child(even) {
+        background-color: #fad7c1;
+    }
+
+    .uranus-itinerary-table tr:hover {
+        background-color: #f2f2f2;
+    }
 </style>
 </head>
 <body>
@@ -49,10 +96,81 @@
             Prepare for an extraordinary odyssey as you embark on a voyage to Uranus, where the mysteries of the cosmos await your exploration. Experience the awe-inspiring beauty of this distant world and delve into the depths of its secrets, where every discovery is a testament to the boundless wonders of the universe.</p>
 
         </section>
+        <section id="itinerary">
+            <h2>Itinerary</h2>
+            <table class="uranus-itinerary-table">
+                <thead>
+                    <tr>
+                        <th>Duration</th>
+                        <th>Activity</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>6 years</td>
+                        <td>Space travel to Uranus in cryo sleep</td>
+                        <td>Solar System</td>
+                    </tr>
+                    <tr>
+                        <td>1 month</td>
+                        <td>Arrival and check-in at luxury orbital resort</td>
+                        <td>Uranus Orbit</td>
+                    </tr>
+                    <tr>
+                        <td>2 weeks</td>
+                        <td>Enjoying panoramic views of Uranus from resort</td>
+                        <td>Uranus Orbit</td>
+                    </tr>
+                    <tr>
+                        <td>1 week</td>
+                        <td>Excursion to the enigmatic Miranda</td>
+                        <td>Miranda Surface</td>
+                    </tr>
+                    <tr>
+                        <td>1 week</td>
+                        <td>Exploration of the icy canyons and cliffs of Ariel</td>
+                        <td>Ariel Surface</td>
+                    </tr>
+                    <tr>
+                        <td>1 week</td>
+                        <td>Discovery tour of the frozen landscape of Titania</td>
+                        <td>Titania Surface</td>
+                    </tr>
+                    <tr>
+                        <td>2 weeks</td>
+                        <td>Indulging in fine dining and entertainment at the resort</td>
+                        <td>Uranus Orbit</td>
+                    </tr>
+                    <tr>
+                        <td>3 days</td>
+                        <td>Experience the thrill of Uranus's atmospheric storms</td>
+                        <td>Uranus Atmosphere</td>
+                    </tr>
+                    <tr>
+                        <td>6 years</td>
+                        <td>Return journey to Earth in cryo sleep</td>
+                        <td>Solar System</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
         <section id="trip-cost">
             <h2>Trip Cost</h2>
-            <p>Cost details for the trip to the planet...</p>
+            <p>Embark on an extraordinary voyage to Uranus and its moons with our exclusive travel package.
+                <br>
+                <ul>
+                    <li>Travel Duration: 12 years</li>
+                    <li>Cost: $30 billion per person</li>
+                    <li>Inclusions: Accommodation, meals, excursions, entertainment, and return journey</li>
+                    <li>Optional Add-ons: Spacewalks, personalized tours, and zero-gravity experiences</li>
+                </ul>
+                <br>
+                Book your once-in-a-lifetime journey to Uranus today and explore the wonders of this distant ice giant and its captivating moons!
+            </p>
         </section>
+        
     </main>
 
     <footer>
