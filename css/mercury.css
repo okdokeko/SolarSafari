@@ -1,0 +1,206 @@
+    body {
+        background-image: url('../img/mercury.jpg');
+        background-size: cover; /* Cover the entire background */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-position: center; /* Center the image */
+        background-attachment: fixed; /* Fixed background */
+        padding: 0; /* Reset default body padding */
+        display: flex; /* Use flexbox layout */
+        flex-direction: column; /* Stack children vertically */
+        min-height: 100vh;
+    }
+    header {
+        text-align: center;
+    
+        margin-top: 5%;
+    }
+    
+    button {
+        background-color: #824caf;
+        border: none;
+        color: white;
+        padding: 1% 2%;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 100%;
+        margin: .5%;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 1em;
+        /* Rounded corners */
+    }
+    
+    button:hover {
+        background-color: #946fb3fa;
+    }
+    
+
+
+    section {
+        background-color: #e6e6fa;
+        padding: 2em;
+        border-radius: 1em;
+        margin: 0 auto 3em; /* Top and bottom margins are set to 0, left and right margins are set to auto */
+        text-align: center;
+        width: 85%;
+    }
+
+    #a-view {
+        display: flex;
+        background-color: #e6e6fa;
+        border-radius: 1em;
+    }
+
+    #a-view > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    h1 {
+        background: linear-gradient(to right, #e2bfff, #ffe6b0);
+        /* Light gradient */
+        text-align: center;
+        width: 15%;
+        margin: 1% auto;
+        /* Center the element horizontally and add margin */
+        padding: 1%;
+        border-radius: 1em;
+        /* Rounded corners */
+    }
+    
+    h2 {
+        
+        text-decoration: underline;
+        text-align: center;
+        margin: auto;
+        /* Center the element horizontally and add margin */
+        padding: 1%;
+    }
+    
+
+    .header h1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0; /* Remove default margin of h1 element */
+        font-size: 24px; /* Adjust font size as needed */
+        font-weight: bold; /* Adjust font weight as needed */
+        color: #000000; /* Set text color as needed */
+    }
+
+    .a-text {
+        flex: 1;
+        padding: 1%;
+        background-color:azure
+    }
+
+    .a-image {
+        padding: 2em;
+
+        display: flex;
+        flex: 1;
+    }
+
+    /*Orbit stuff*/
+    #orbit-container {
+        display: flex;
+        background-color: #e6e6fa;
+        border-radius: 1em;
+    }
+
+    #orbit-container > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .orbit-video {
+        justify-content: center;
+        padding: 2em;
+
+    }
+
+    .orbit-text {
+        flex: 1;
+        padding: 1%;
+        background-color:azure
+    }
+
+    /*Info stuff*/
+    #final-row {
+        display: flex;
+        background: rgba(0, 0, 255, 0);
+        border-radius: 1em;
+        gap: 5em;
+    }
+
+    #final-row > div{
+        /*display: flex;*/
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .info-text {
+        flex: 1;
+        background-color:#e6e6fa;
+        padding: 2em;
+        border-radius: 1em;
+
+    }
+
+    .itinerary-text {
+        flex: 1;
+        padding: 2em;
+        background-color:#e6e6fa;
+        border-radius: 1em;
+    }
+
+    /* Table styles */
+    .jupyter-itinerary-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .jupyter-itinerary-table th, .jupyter-itinerary-table td {
+        padding: 8px;
+        border-bottom: 1px solid black;
+    }
+    .jupyter-itinerary-table th {
+        color: black;
+        font-weight: bold;
+        border-bottom: 2px solid black;
+    }
+    .jupyter-itinerary-table tbody tr:nth-child(odd) {
+        background-color: #f5caaf;
+    }
+    .jupyter-itinerary-table tr:nth-child(even) {
+        background-color: #fad7c1;
+    }
+    .jupyter-itinerary-table tr:hover {
+        background-color: #f2f2f2;
+    }
+
+    .para {
+        text-align: left; 
+        font: 16pt blue;
+    }
+
+
+    footer {
+        background: linear-gradient(to right, #e2bfff, #ffe6b0);
+        /* Light gradient */
+    
+        width: 100%;
+        margin: 0 auto ;
+    
+        color: black;
+        text-align: center;
+        padding: 2em;
+        margin-top: auto;
+        /* Push footer to the bottom */
+        padding: 10px;
+    }
