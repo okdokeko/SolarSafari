@@ -16,9 +16,15 @@ body {
 }
 
 /* Style for saturn sections */
-#moon-info, #rings-info {
+#rings-info {
     background-color: #e6e6fa; /* Light Purple */
     padding: 2em;
+    border-radius: 1em;
+}
+
+#moon-info {
+    background-color: #e6e6fa; /* Light Purple */
+    padding: 2em; /* Adjust padding as needed */
     border-radius: 1em;
 }
 
@@ -34,11 +40,11 @@ body {
 }
 
 #moon-info {
-    width: 100%;
+    width: 90%; /* Adjust the width as needed */
+    margin: 0 auto 2em; /* Center the section horizontally and add margin at the bottom */
     box-sizing: border-box;
     overflow: hidden
 }
-
 
 .saturn-itinerary-table {
     width: 100%;
@@ -70,14 +76,14 @@ body {
 
 #trip-cost {
     width: 40%;
-    margin-bottom: 20px;
+    margin-bottom: 2em; /* Add margin at the bottom */
     float: right;
     text-align: left; /* Align text to the left */
 }
 
 #itinerary {
     width: 48%;
-    margin-bottom: 20px;
+    margin-bottom: 2em; /* Add margin at the bottom */
     float: left;
 }
 
@@ -86,7 +92,6 @@ body {
     margin-bottom: 20px;
     float: right;
 }
-
 
 #moon2 {
     float: right; /* moon to the right */
@@ -105,6 +110,7 @@ footer {
     text-align: center;
     width: 100%;
     margin-top: auto; /* Push footer to the bottom */
+    border-radius: 0;
 }
 
 .header h1 {
@@ -116,4 +122,3 @@ footer {
     font-weight: bold; 
     color: #000000; 
 }
-
