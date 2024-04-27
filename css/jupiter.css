@@ -122,16 +122,19 @@ footer {
     box-sizing: border-box; / * Include padding and border in the width *
 }*/
 
-#trip-cost {        
+#trip-cost {
     width: 40%;
-    
+    margin-bottom: 2em; /* Add margin at the bottom */
     float: right;
+    text-align: left; /* Align text to the left */
+    margin-right: 20px;
 }
 
 #itinerary {
-    width: 40%;
-   
+    width: 48%;
+    margin-bottom: 2em; /* Add margin at the bottom */
     float: left;
+    margin-left: 20px;
 }
 
 

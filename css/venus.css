@@ -86,15 +86,19 @@ section {
     text-align: center;
     width: 85%;
 }
-#itinerary, #trip-cost {
-    width: 48%;
-    margin-bottom: 20px;
-    float: left;
-}
-
 #trip-cost {
     width: 40%;
+    margin-bottom: 2em; /* Add margin at the bottom */
     float: right;
+    text-align: left; /* Align text to the left */
+    margin-right: 20px;
+}
+
+#itinerary {
+    width: 48%;
+    margin-bottom: 2em; /* Add margin at the bottom */
+    float: left;
+    margin-left: 20px;
 }
 
 table, .venus-itinerary-table {
