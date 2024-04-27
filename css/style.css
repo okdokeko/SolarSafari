@@ -7,7 +7,7 @@
     --color3: #0000FF;
 }
 
-body{
+body {
     background-color: #6767ff;
 }
 
@@ -19,19 +19,23 @@ header {
 }
 
 h1 {
-    background: linear-gradient(to right, #e2bfff, #ffe6b0); /* Light gradient */
+    background: linear-gradient(to right, #e2bfff, #ffe6b0);
+    /* Light gradient */
     text-align: center;
     width: 15%;
-    margin: 1% auto; /* Center the element horizontally and add margin */
+    margin: 1% auto;
+    /* Center the element horizontally and add margin */
     padding: 1%;
-    border-radius: 1em; /* Rounded corners */
+    border-radius: 1em;
+    /* Rounded corners */
 }
 
 h2 {
+    
     text-decoration: underline;
     text-align: center;
-    width: 15%;
-    margin: 1% auto; /* Center the element horizontally and add margin */
+    margin: auto;
+    /* Center the element horizontally and add margin */
     padding: 1%;
 }
 
@@ -49,58 +53,85 @@ button {
     margin: .5%;
     transition-duration: 0.4s;
     cursor: pointer;
-    border-radius: 1em; /* Rounded corners */
-}
-button:hover {
-    background-color: #946fb3fa; 
-}
-
-/* Style for planet sections */
-#composition, #itinerary, #planet-info, #sightseeing, #trip-cost {
-    background-color: #e6e6fa; /* Light Purple */
-    padding: 2em;
     border-radius: 1em;
+    /* Rounded corners */
 }
 
-#planet-info{
-    text-align: center;
+button:hover {
+    background-color: #946fb3fa;
 }
 
-#sightseeing {
-    text-align: center;
-}
-
-#composition{
-    text-align: center;
-}
-
-#itinerary {
-    text-align: center;
-}
 
 
 section {
-    margin-bottom: 3em;
+    margin: 0 auto 3em; /* Top and bottom margins are set to 0, left and right margins are set to auto */
+    background-color: #e6e6fa; /* Light Purple */
+    padding: 2em;
+    border-radius: 3em;
+    text-align: center;
+    width: 85%;
+}
+
+#itinerary {
+
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    border-bottom: 1px solid black;
+}
+
+th {
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f5caaf;
+}
+
+tr:nth-child(even) {
+    background-color: #fad7c1;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
 }
 
 p {
     word-wrap: break-word;
     width: 60%;
     text-align: center;
-    margin: 0 auto; 
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin: 0 auto;
+    padding: 1%;
 }
 
 
 table {
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 footer {
-    background: linear-gradient(to right, #e2bfff, #ffe6b0); /* Light gradient */
+    background: linear-gradient(to right, #e2bfff, #ffe6b0);
+    /* Light gradient */
+
+    width: 85%;
+    margin: 0 auto ;
+
     color: black;
     text-align: center;
-    width: 100%;
-    margin-top: auto; /* Push footer to the bottom */
+    padding: 2em;
+    border-radius: 3em;
+    margin-top: auto;
+    /* Push footer to the bottom */
+    padding: 10px;
 }

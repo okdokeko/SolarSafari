@@ -1,120 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="../img/jupiter.jpg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jupiter</title>
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/jupiter.css">
 <style>
-    body {
-        background-image: url('../img/jupiter.jpg');
-        background-size: cover; /* Cover the entire background */
-        background-repeat: no-repeat; /* Prevent the image from repeating */
-        background-position: center; /* Center the image */
-        background-attachment: fixed; /* Fixed background */
-        margin: 0; /* Reset default body margin */
-        padding: 0; /* Reset default body padding */
-        display: flex; /* Use flexbox layout */
-        flex-direction: column; /* Stack children vertically */
-        min-height: 100vh; /* Ensure body stretches to at least the height of the viewport */
-    }
-    
-    h1 {
-        text-align: center;
-    }
 
-    h2 {
-        text-align: center;
-        margin-top: 5%;
-    }
-
-    section {
-        background-color: #e6e6fa;
-        padding: 2em;
-        border-radius: 1em;
-    }
-    
-    #planet-info {
-        width: 100%;
-        text-align: center; /* Center the content */
-        box-sizing: border-box;
-    }
-
-    #moons {
-        width: 100%; /* Set the width to fill the container */
-        box-sizing: border-box; /* Include padding and border in the width */
-    }
-
-    #trip-cost {        
-        width: 40%;
-        margin-bottom: 20px;
-        float: right;
-    }
-
-    #itinerary {
-        width: 48%;
-        margin-bottom: 20px;
-        float: left;
-    }
-
-    .header h1 {
-        position: fixed;
-        top: 0;
-        left: 0;
-        margin: 0; /* Remove default margin of h1 element */
-        font-size: 24px; /* Adjust font size as needed */
-        font-weight: bold; /* Adjust font weight as needed */
-        color: #000000; /* Set text color as needed */
-    }
-
-    .jupyter-itinerary-table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-
-    .jupyter-itinerary-table th, .jupyter-itinerary-table td {
-        padding: 8px;
-        border-bottom: 1px solid black;
-    }
-
-    .jupyter-itinerary-table th {
-        color: black;
-        font-weight: bold;
-        border-bottom: 2px solid black;
-    }
-
-    .jupyter-itinerary-table tbody tr:nth-child(odd) {
-        background-color: #f5caaf;
-    }
-
-    .jupyter-itinerary-table tr:nth-child(even) {
-        background-color: #fad7c1;
-    }
-
-    .jupyter-itinerary-table tr:hover {
-        background-color: #f2f2f2;
-    }
-
-    #moons h3 {
-        text-align: center; /* Center align the header */
-        margin-bottom: 20px; /* Add margin below the header */
-    }
-
-    #moons p {
-        text-align: justify; /* Align text in paragraphs */
-    }
-
-    #moons img {
-        padding: 5px;
-    }
-
-    footer {
-        background: linear-gradient(to right, #e2bfff, #ffe6b0); /* Light gradient */
-        color: black;
-        text-align: center;
-        width: 100%;
-        margin-top: auto; /* Push footer to the bottom */
-    }
 </style>
 </head>
 <body>
@@ -146,28 +39,28 @@
 
             <section id="moons">
                 <h2>Moons</h2>
-                <p>Discover the moons of Jupiter...
-                    <br>
-                    <img src="../img/JupitersIo.jpg" alt="IO moon picture" width="250" height="250"> 
+                <p>Discover the moons of Jupiter...</p>
+                <div class="moon-images">
+                    <img src="../img/JupitersIo.jpg" alt="Io moon picture" width="250" height="250"> 
                     <img src="../img/jupiterEuropa.jpg" alt="Europa moon picture" width="250" height="250"> 
                     <img src="../img/jupiterCallisto.jpg" alt="Callisto moon picture" width="250" height="250"> 
-                </p>
+                </div>
                 <br>    
-                <div style="display: inline-block; width: 30%; padding: 18px;vertical-align: center;">
+                <div class="moon-container">
                     <h3>Io</h3>
                     <p>The innermost of Jupiter's Galilean moons, Io is a world of fire and fury. Its surface is scarred by relentless volcanic activity, painting its landscape with vibrant hues of red, orange, and yellow. Visitors to Io will witness towering volcanic plumes erupting into space, casting a fiery glow across the moon's sulfurous surface.</p>
                 </div>
-                
-                <div style="display: inline-block; width: 30%; padding: 18px; vertical-align: center;">
+                <div class="moon-container">
                     <h3>Europa</h3>
                     <p>Europa, the icy moon of Jupiter, beckons with its enigmatic beauty. Its surface is crisscrossed by a network of dark streaks and fractures that hint at the hidden ocean beneath its frozen crust. Explore the enigmatic depths of Europa's subsurface ocean and marvel at the intricate patterns etched into the moon's icy terrain by the forces of tidal flexing.</p>
                 </div>
-                
-                <div style="display: inline-block; width: 30%;padding: 18px; vertical-align: center;">
-                    <h3 >Callisto</h3>
+                <div class="moon-container">
+                    <h3>Callisto</h3>
                     <p>Callisto, with its worn surface covered in many impact. Discover the mysteries of Callisto's distant past as you hike over its untamed terrain and imposing mountain ranges. Take in the mesmerizing views of Jupiter, which sits low on the horizon and casts a warm, golden glow across the moon's barren plains.</p>
                 </div>
             </section>
+            
+            
             
             <section id="itinerary">
                 <h2>Itinerary</h2>

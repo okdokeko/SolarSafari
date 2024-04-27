@@ -36,6 +36,16 @@
         margin: 3em;
 
     }
+    #form {
+
+      display: flex;
+      background-color: #e6e6fa;
+      float: right;
+      border-radius: 1em;
+      gap: 3em;
+      margin: 3em;
+    }
+    
 
     #getting-started > div{
         display: flex;
@@ -56,12 +66,78 @@
 
     .started-left {
         padding: 1%;
-        background-color:azure
+        background-color:azure;
+        border-radius: 1em;
+
     }
 
     .started-right {
       padding: 2em;
     }
+    label {
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="datetime-local"],
+    textarea {
+      width: 100%;
+      padding: 0.5em;
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+  
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    /*Reviews stuff*/
+    #reviews {
+        display: grid;
+        background-color: #e6e6fa;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: fit-content;
+        border-radius: 1em;
+        gap: 3em;
+        margin: 3em;
+
+    }    
+
+    #reviews > *{
+      
+        background-color:azure;
+        border-radius: 1em;
+        gap: 3em;
+        margin: 3em;
+        
+
+    }
+
+    .center {
+      display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+    }
+
+
 
   </style>
 
@@ -84,15 +160,15 @@
   <main>
     <section id="getting-started" >
       <div class="started-left">
-          <h2>Getting Started</h2>
-          <p style="text-align: left; font: 16pt blue; display: flex;">Many people have wondered what this rocky planet will have in store for them. Well you're in luck! The Solar Safari cruise ship will take us sailing right
-              on by for a once in a lifetime view! Here, you will get to experience the wonders of of a beutiful deep gray formed from the oceans of lava that spent millions of years cooling!
-              Between that and the intricate white streaks formed from craters it is an awe inspiring sight! You will aslo get the chance to look through the lens of old Earth astronomers 
-              using a special chemical map to portray chemical concententrations on the surface!
+          <h2>Getting Started With Solar Safari</h2>
+          <p style="text-align: left; font: 16pt blue; display: flex;">Prepare for an unforgettable voyage with Solar Safari, your entrance to the wonders of our solar system. 
+            Whether you're a seasoned space explorer or embarking on your first cosmic adventure, 
+            we've designed an experience that promises thrill, discovery, and lasting memories. 
+            From the rocky topography of Mercury to the cold depths of Pluto, each location provides a unique opportunity to dig into the mysteries of our cosmic friend. Join us on a journey into the universe, where the wonders of space await your discovery. Welcome to Solar Safari, where the universe is yours to discover.
           </p>    
       </div>
       <div class="started-right">
-              <img src="../img/earth.jpg" alt="Chemical lens mercury" width=100% >
+              <img src="../img/rocketship.jfif" alt="A rocket ship" width=100% >
       </div>
   </section>
 
@@ -124,22 +200,79 @@
   </div>
 </section>
 
-<section id="getting-started" >
-  <div class="started-left">
-      <h2>Space Explortaion</h2>
-      <p style="text-align: left; font: 16pt blue; display: flex;">Many people have wondered what this rocky planet will have in store for them. Well you're in luck! The Solar Safari cruise ship will take us sailing right
-          on by for a once in a lifetime view! Here, you will get to experience the wonders of of a beutiful deep gray formed from the oceans of lava that spent millions of years cooling!
-          Between that and the intricate white streaks formed from craters it is an awe inspiring sight! You will aslo get the chance to look through the lens of old Earth astronomers 
-          using a special chemical map to portray chemical concententrations on the surface!
-      </p>    
+<section id="form" >
+  <div class="started-left" style="width: 200%;">
+   
+      <h2>Interested in Solar Safari</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="party-size">Party Size:</label><br>
+        <input type="number" id="party-size" name="party-size" required><br>
+        <label for="budget">Budget:</label><br>
+        <input type="text" id="budget" name="budget" required><br>
+        <label for="calendar">Select Available Time:</label><br>
+        <input type="datetime-local" id="calendar" name="calendar" required><br><br>
+        <input type="submit" value="Submit">
+      </form>
+   
   </div>
   <div class="started-right">
-          <img style="margin-bottom:1em" src="../img/earth.jpg" alt="Chemical lens mercury" width=100% >
-          <img src="../img/earth.jpg" alt="Chemical lens mercury" width=100% >
+          <img style="margin-bottom:1em" src="../img/solarsystem.jpg" alt="Solar System" width=100% >
+          
 
   </div>
 </section>
 
+<section id="reviews" >
+  <div class="reviews-left">
+      <h2>Space Explortaion</h2>
+      <img src="../img/5stars.png" alt="5 stars" width="90%" class=center>
+      <p style="text-align: left; font: 16pt blue;">My trip to Mercury was great the food was good and it was nice and toasty! 
+        But my guide forgot to tell me that IT WAS IN RETROGRADE which is a rookie mistake. I took care of my guide then had an amazing trip after that.
+      </p>    
+  </div>
+  <div class="reviews-middle">
+    <h2>Space Explortaion</h2>
+    <img src="../img/5stars.png" alt="5 stars"width="80%" class=center>
+    <p style="text-align: left; font: 16pt blue; ">This sci-fi exploration of Venus was an unforgettable adventure. Despite the challenges posed by the planet's hostile environment, 
+      the journey offered a fascinating glimpse into its mysterious landscape and potential for scientific discovery
+    </p>    
+
+  </div>
+  <div class="reviews-right">
+    <h2>Space Explortaion</h2>
+    <img src="../img/5stars.png" alt="5 stars"width="90%" class=center>
+    <p style="text-align: left; font: 16pt blue;">I went on vacation to Jupiter! Overall the trip was fun but afterwards I seemed to have gotten more stupider. 
+      The food was alright but the lodging was quite splendid the term GAS Giant should show how big my room was. Might go back! 
+    </p>    
+
+  </div>
+</section>
+
+
   </main>
+  <footer>
+    <p>Email: <a href="mailto:solarsafarihelp@solarsafari.com">solarsafarihelp@solarsafari.com</a></p>
+    <p>Last Updated: <span id="currentDate"></span></p>
+    <p>Social media: @solarsafari</p>
+</footer>
+
+<script>
+    // Get current date and format it
+    const currentDate = new Date().toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+    
+    // Set current date to the element with id "currentDate"
+    document.getElementById('currentDate').textContent = currentDate;
+</script>
+
 </body>
 </html>                                                                                                         
