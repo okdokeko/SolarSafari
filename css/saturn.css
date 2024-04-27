@@ -22,13 +22,21 @@ body {
     border-radius: 1em;
 }
 
-#saturn-rings{
+#rings-info{
     text-align: center;
+    overflow: hidden; /* Clear floats */
+}
+
+#rings-info img {
+    float: right; /* Float the image to the right */
+    margin-left: 20px; /* Add some space between the image and the text */
+    width: 15%; /* Set the width of the image to 50% of its container */
 }
 
 #moon-info {
     width: 100%;
     box-sizing: border-box;
+    overflow: hidden
 }
 
 
@@ -70,6 +78,26 @@ body {
     width: 48%;
     margin-bottom: 20px;
     float: left;
+}
+
+#moon2 {        
+    width: 40%;
+    margin-bottom: 20px;
+    float: right;
+}
+#moon1 {
+    float: left; /* Float the moon info section to the left */
+}
+
+#moon2 {
+    float: right; /* Float the other moon info section to the right */
+}
+
+#moon-info img {
+    float: center; /* Float the image to the right */
+    margin-left: 20px; /* Add some space between the image and the text */
+    width: 200px; /* Set the width of the image to 200 pixels */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .header h1 {
