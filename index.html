@@ -109,27 +109,29 @@
 
     /*Reviews stuff*/
     #reviews {
-        display: grid;
-        background-color: #e6e6fa;
-        grid-auto-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: fit-content;
-        border-radius: 1em;
-        gap: 3em;
-        margin: 3em;
-
-    }    
-
-    #reviews > *{
-      
-        background-color:azure;
-        border-radius: 1em;
-        gap: 3em;
-        margin: 3em;
-        
-
-    }
-
+      display: grid;
+      background-color: #e6e6fa;
+      grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns as needed */
+      gap: 3em;
+      padding: 2em; /* Add padding to maintain consistent spacing */
+      border-radius: 1em;
+  }
+  
+  #reviews > * {
+      background-color: azure;
+      border-radius: 1em;
+      padding: 1em; /* Add padding to each review box */
+  }
+  
+  /* Footer styles */
+footer {
+  background: linear-gradient(to right, #e2bfff, #ffe6b0); /* Light gradient */
+  color: black;
+  text-align: center;
+  width: 100%;
+  margin-top: auto; /* Push footer to the bottom */
+}
+  
     .center {
       display: block;
 margin-left: auto;
