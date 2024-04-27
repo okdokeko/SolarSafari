@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="../img/uranus.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uranus</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+    body {
+        background-image: url('../img/uranus.jpg');
+        background-size: cover; /* Cover the entire background */
+        background-repeat: no-repeat; /* Prevent the image from repeating */
+        background-position: center; /* Center the image */
+        background-attachment: fixed; /* Fixed background */
+        padding: 0; /* Reset default body padding */
+        display: flex; /* Use flexbox layout */
+        flex-direction: column; /* Stack children vertically */
+        min-height: 100vh;
+    }
+
+    .header h1 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin: 0; /* Remove default margin of h1 element */
+        font-size: 24px; /* Adjust font size as needed */
+        font-weight: bold; /* Adjust font weight as needed */
+        color: #000000; /* Set text color as needed */
+    }
+
+    #planet-info {
+        width: 100%;
+        text-align: center; /* Center the content */
+        box-sizing: border-box;
+    }
+
+    #trip-cost {        
+        width: 40%;
+        margin-bottom: 20px;
+        float: right;
+    }
+
+    #itinerary {
+        width: 48%;
+        margin-bottom: 20px;
+        float: left;
+    }
+
+
+    .uranus-itinerary-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .uranus-itinerary-table th, .uranus-itinerary-table td {
+        padding: 8px;
+        border-bottom: 1px solid black;
+    }
+
+    .uranus-itinerary-table th {
+        color: black;
+        font-weight: bold;
+        border-bottom: 2px solid black;
+    }
+
+    .uranus-itinerary-table tbody tr:nth-child(odd) {
+        background-color: #f5caaf;
+    }
+
+    .uranus-itinerary-table tr:nth-child(even) {
+        background-color: #fad7c1;
+    }
+
+    .uranus-itinerary-table tr:hover {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>Solar Safari</h1>
+    </div>
+    <header>
+        <h1>Uranus</h1>
+        <button onclick="location.href='../index.html';">Home</button>
+    </header>
+    <main>
+        <section id="planet-info">
+            <h2>About Planet</h2>
+            <p>Welcome to the enigmatic world of <span style="color: #7aa7c0; font-size: 1.1em;">Uranus</span>, a celestial puzzle nestled in the depths of our solar system! </p>
+            <p>The planet was unveiled by the visionary British astronomer William Herschel in 1781. Unlike its planetary counterparts, Uranus boasts a unique orientation, spinning majestically on its side as it dances around the sun. 
+            Its serene azure hue, derived from atmospheric methane, captivates the imagination and beckons explorers to unlock its secrets. 
+            Embark on a journey to uncover the mysteries of Uranus, where towering clouds, swirling storms, and icy moons weave a tapestry of cosmic wonders. 
+            Traverse the icy plains of <span style="color: #5D869E;">Ariel</span>, soar over the rugged terrain of <span style="color: #6BA976;">Titania</span>, and witness the captivating dance of rings encircling this celestial giant. 
+            But Uranus's allure extends beyond its physical features. Its peculiar magnetic field, tilted axis, and complex moon system provide scientists with a captivating puzzle to solve, offering insights into the formation and evolution of our solar system. 
+            Prepare for an extraordinary odyssey as you embark on a voyage to Uranus, where the mysteries of the cosmos await your exploration. Experience the awe-inspiring beauty of this distant world and delve into the depths of its secrets, where every discovery is a testament to the boundless wonders of the universe.</p>
+
+        </section>
+        <section id="planet-info">
+                <h2>Uranus's Axial Tilt</h2>
+                <p>
+                <img src="../img/planet_tilts.jpg" alt="planets and their tilts" width="300" height = "500">
+                <br>
+                <br>
+                Uranus, with its <span style="font-size: 1.1em;">extreme axial tilt of approximately 98 degrees</span>, is a celestial oddity in our solar system. This tilt is so extreme that Uranus essentially rolls on its side as it orbits the Sun. Unlike any other planet, Uranus appears to rotate on its side like a spinning top, creating unique and dramatic seasonal variations.
+                The cause of Uranus's extreme tilt remains a subject of scientific inquiry, with theories ranging from gravitational interactions with passing celestial bodies to colossal collisions in its distant past. This peculiar orientation has significant consequences for Uranus's atmosphere, magnetosphere, and climate, leading to long periods of sunlight and darkness at its poles.
+                Understanding Uranus's axial tilt is essential for unraveling the mysteries of its atmospheric dynamics, magnetic field, and moon system. Further exploration and study of Uranus promise to shed light on the mechanisms driving planetary evolution and diversity within our solar system.
+                </p>
+    
+        </section>
+        <section id="itinerary">
+            <h2>Itinerary</h2>
+            <table class="uranus-itinerary-table">
+                <thead>
+                    <tr>
+                        <th>Duration</th>
+                        <th>Activity</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>6 years</td>
+                        <td>Space travel to Uranus in cryo sleep</td>
+                        <td>Solar System</td>
+                    </tr>
+                    <tr>
+                        <td>1 month</td>
+                        <td>Arrival and check-in at luxury orbital resort</td>
+                        <td>Uranus Orbit</td>
+                    </tr>
+                    <tr>
+                        <td>2 weeks</td>
+                        <td>Enjoying panoramic views of Uranus from resort</td>
+                        <td>Uranus Orbit</td>
+                    </tr>
+                    <tr>
+                        <td>1 week</td>
+                        <td>Excursion to the enigmatic Miranda</td>
+                        <td>Miranda Surface</td>
+                    </tr>
+                    <tr>
+                        <td>1 week</td>
+                        <td>Exploration of the icy canyons and cliffs of Ariel</td>
+                        <td>Ariel Surface</td>
+                    </tr>
+                    <tr>
+                        <td>1 week</td>
+                        <td>Discovery tour of the frozen landscape of Titania</td>
+                        <td>Titania Surface</td>
+                    </tr>
+                    <tr>
+                        <td>2 weeks</td>
+                        <td>Indulging in fine dining and entertainment at the resort</td>
+                        <td>Uranus Orbit</td>
+                    </tr>
+                    <tr>
+                        <td>3 days</td>
+                        <td>Experience the thrill of Uranus's atmospheric storms</td>
+                        <td>Uranus Atmosphere</td>
+                    </tr>
+                    <tr>
+                        <td>6 years</td>
+                        <td>Return journey to Earth in cryo sleep</td>
+                        <td>Solar System</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="trip-cost">
+            <h2>Trip Cost</h2>
+            <p>Embark on an extraordinary voyage to Uranus and its moons with our exclusive travel package.
+                <br>
+                <ul>
+                    <li>Travel Duration: 12 years</li>
+                    <li>Cost: $30 billion per person</li>
+                    <li>Inclusions: Accommodation, meals, excursions, entertainment, and return journey</li>
+                    <li>Optional Add-ons: Spacewalks, personalized tours, and zero-gravity experiences</li>
+                </ul>
+                <br>
+                Book your once-in-a-lifetime journey to Uranus today and explore the wonders of this distant ice giant and its captivating moons!
+            </p>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Email: <a href="mailto:solarsafarihelp@solarsafari.com">solarsafarihelp@solarsafari.com</a></p>
+        <p>Last Updated: <span id="currentDate"></span></p>
+        <p>Social media: @solarsafari</p>
+    </footer>
+
+    <script>
+        // Get current date and format it
+        const currentDate = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        
+        // Set current date to the element with id "currentDate"
+        document.getElementById('currentDate').textContent = currentDate;
+    </script>
+</body>
+</html>
