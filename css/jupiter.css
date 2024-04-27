@@ -22,23 +22,7 @@ header {
     margin-top: 5%;
 }
 
-/*h1 {
-    background: linear-gradient(to right, #e2bfff, #ffe6b0); /* Light gradient * /
-    text-align: center;
-    width: 15%;
-    margin: 1% auto; /* Center the element horizontally and add margin * /
-    padding: 1%;
-    border-radius: 1em; /* Rounded corners * /
-}*/
 
-/*h2 {
-    text-decoration: underline;
-    text-align: center;
-    width: 15%;
-    margin: 1% auto; /* Center the element horizontally and add margin * /
-    padding: 1%;
-    margin-top: 5%;
-}*/
 
 /* Button styles */
 button {
@@ -56,44 +40,17 @@ button {
     border-radius: 1em; /* Rounded corners */
 }
 
+
+
+header {
+    text-align: center;
+    margin-top: 5%;
+}
+
+
 button:hover {
     background-color: #946fb3fa;
 }
-
-/* Planet section styles */
-/*#composition, #itinerary, #planet-info, #sightseeing, #trip-cost {
-    background-color: #e6e6fa; /* Light Purple * /
-    padding: 2em;
-    border-radius: 1em;
-} */
-
-/*#planet-info {
-    width: 100%;
-    text-align: center; /* Center the content *
-    box-sizing: border-box;
-} */
-
-#sightseeing {
-    text-align: center;
-}
-
-#composition {
-    text-align: center;
-}
-
-#itinerary {
-    text-align: center;
-}
-
-/* Paragraph styles */
-/*p {
-    word-wrap: break-word;
-    width: 60%;
-    text-align: center;
-    margin: 0 auto; 
-    margin-top: 1%;
-    margin-bottom: 1%;
-}*/
 
 /* Table styles */
 table {
@@ -110,34 +67,6 @@ footer {
     border-radius: 0;
 }
 
-/*section {
-    background-color: #e6e6fa;
-    padding: 2em;
-    border-radius: 1em;
-    margin-bottom: 3em;
-}*/
-
-/*#moons {
-    width: 100%; /* Set the width to fill the container * /
-    box-sizing: border-box; / * Include padding and border in the width *
-}*/
-
-#trip-cost {
-    width: 40%;
-    margin-bottom: 2em; /* Add margin at the bottom */
-    float: right;
-    text-align: left; /* Align text to the left */
-    margin-right: 20px;
-}
-
-#itinerary {
-    width: 48%;
-    margin-bottom: 2em; /* Add margin at the bottom */
-    float: left;
-    margin-left: 20px;
-}
-
-
 .header h1 {
     position: fixed;
     top: 0;
@@ -147,6 +76,29 @@ footer {
     font-weight: bold; /* Adjust font weight as needed */
     color: #000000; /* Set text color as needed */
 }
+
+#itinerary {
+    width: 40%;
+    margin-left: 46px;
+    float: left;
+
+}
+
+#trip-cost {
+    width: 40%;
+    margin-right: 46px;
+    float: right;
+}
+footer {
+    background: linear-gradient(to right, #e2bfff, #ffe6b0); /* Light gradient */
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+    border-radius: 0;
+}
+
+
 
 .jupyter-itinerary-table {
     width: 100%;
