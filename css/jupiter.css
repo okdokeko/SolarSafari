@@ -77,17 +77,19 @@ footer {
     color: #000000; /* Set text color as needed */
 }
 
-#itinerary {
-    width: 40%;
-    margin-left: 46px;
-    float: left;
-
-}
-
 #trip-cost {
     width: 40%;
-    margin-right: 46px;
+    margin-bottom: 2em; /* Add margin at the bottom */
     float: right;
+    text-align: left; /* Align text to the left */
+    margin-right: 20px;
+}
+
+#itinerary {
+    width: 48%;
+    margin-bottom: 2em; /* Add margin at the bottom */
+    float: left;
+    margin-left: 20px;
 }
 footer {
     background: linear-gradient(to right, #e2bfff, #ffe6b0); /* Light gradient */
