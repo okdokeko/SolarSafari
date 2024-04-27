@@ -9,22 +9,22 @@ document.body.appendChild(renderer.domElement);
 
 // Load starfield cube texture
 const loader = new THREE.CubeTextureLoader();
-const starField = loader.load([
-  "../img/stars.jpg",
-  "../img/stars.jpg",
-  "../img/stars.jpg",
-  "../img/stars.jpg",
-  "../img/stars.jpg",
-  "../img/stars.jpg",
-]);
-starField.mapping = THREE.CubeReflectionMapping;
-starField.encoding = THREE.sRGBEncoding;
-starField.mapping = THREE.CubeReflectionMapping;
-starField.wrapS = THREE.RepeatWrapping;
-starField.wrapT = THREE.RepeatWrapping;
-starField.repeat.set(0.5, 0.5);
+//const starField = loader.load([
+//  "../img/stars.jpg",
+//  "../img/stars.jpg",
+//  "../img/stars.jpg",
+//  "../img/stars.jpg",
+//  "../img/stars.jpg",
+//  "../img/stars.jpg",
+//]);
+//starField.mapping = THREE.CubeReflectionMapping;
+//starField.encoding = THREE.sRGBEncoding;
+//starField.mapping = THREE.CubeReflectionMapping;
+//starField.wrapS = THREE.RepeatWrapping;
+//starField.wrapT = THREE.RepeatWrapping;
+//starField.repeat.set(0.5, 0.5);
 const scene = new THREE.Scene();
-scene.background = starField;
+//scene.background = starField;
 
 // Load texture for the sphere
 const textureLoader = new THREE.TextureLoader();
@@ -39,9 +39,9 @@ const material = new THREE.MeshStandardMaterial({
 const sphere = new THREE.Mesh(geometry, material);
 scene.add(sphere);
 
-// Adjust light color to be more red
-const light = new THREE.PointLight(0xffaaaa, 10, 100, 0.5);
-light.position.set(0.8, 0.4, 1.3);
+// Adjust light color to be more blue
+const light = new THREE.PointLight(0xaaaaff, 10, 100, 0.5);
+light.position.set(1, 1, 5);
 scene.add(light);
 
 const camera = new THREE.PerspectiveCamera(
@@ -50,7 +50,7 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   1000
 );
-camera.position.z = 10;
+camera.position.z = 3;
 
 const textElement = document.createElement("div");
 textElement.style.position = "fixed"; // Use fixed positioning to make it stay in place
@@ -70,9 +70,11 @@ textElement.style.textAlign = "center"; // Align text to the center
 // Set the HTML content of the textElement
 textElement.innerHTML = `
 <div>
-<button id="menuButton" style="position: absolute; top: 10px; left: 10px; padding: 10px; background-color: #ffffff; color: #000000; border: none; cursor: pointer;" onclick="location.href='../index.html';">Back To Solar Safari</button>
-<h1>Neptune</h1>
-<section id="planet-info">
+  <header>
+  <button id="menuButton" style="position: absolute; top: 10px; left: 10px; padding: 10px; background-color: #ffffff; color: #000000; border: none; cursor: pointer;" onclick="location.href='../index.html';">Back To Solar Safari</button>
+  <h1 style="width: auto; padding: 0;">Neptune</h1>
+  </header>
+  <section id="planet-info">
     <h2>About Planet</h2>
     <p style="text-align: justify;">Welcome to Neptune, the enigmatic jewel of the outer solar system! Immerse yourself in the wonders of this majestic gas giant, 
         where swirling storms and icy mysteries await your exploration. As the eighth and farthest planet from the Sun, Neptune boasts 
@@ -87,17 +89,18 @@ textElement.innerHTML = `
         distant world. Whether you seek the thrill of discovery or the tranquility of celestial vistas, Neptune promises an unforgettable 
         experience that will leave you awe-inspired and longing for more.
     </p>
-</section>
-<section id="surface-cruise">
-    <p>
+  </section>
+
+  <section id="surface-cruise">
+    <h2>Cruise</h2>
+      <p>
         While Neptune may lack a solid ground to tread upon, its dense atmosphere offers a surreal landscape waiting to be explored.
         Step aboard our state-of-the-art cruiser specially designed to navigate the turbulent winds and swirling clouds of Neptune. Feel the thrill as you 
-        glide through layers of hydrogen and helium, marveling at the ever-changing patterns and colors that paint the sky.
-        <img src="../img/neptune-cruise.png" alt="neptune cruise room" width="250" height="250"> 
-    </p>
-</section>
+        glide through layers of hydrogen and helium, marveling at the ever-changing patterns and colors that paint the sky. 
+      </p>
+  </section>
 
-<section id="itinerary">
+  <section id="itinerary">
     <h2>Itinerary</h2>
     <table class="neptune-itinerary-table">
       <thead>
@@ -109,26 +112,35 @@ textElement.innerHTML = `
       </thead>
       <tbody>
         <tr>
-          <td>12 year</td>
+          <td>12 years</td>
           <td>Travel from Earth to Neptune</td>
           <td>Interplanetary Space</td>
         </tr>
         <tr>
-          <td>5 years</td>
+          <td>6 month</td>
           <td>Surface cruise on Neptune</td>
           <td>Neptune Surface</td>
         </tr>
         <tr>
-            <td>Optional: 3 years</td>
-            <td>Triton ice exploration</td>
-            <td>Triton Surface</td>
-          </tr>
+            <td>12 hours*</td>
+            <td>Travel to Triton</td>
+            <td>Neptune Orbit</td>
+        </tr>
         <tr>
+            <td>2 days*</td>
+            <td>Triton geyser park exploration</td>
+            <td>Triton surface</td>
+        </tr>
         <tr>
-            <td>Optional: 3 years</td>
-            <td>Nereid amusement park and resort</td>
-            <td>Nereid Surface</td>
-          </tr>
+            <td>3 days*</td>
+            <td>Travel from Triton to Nereid</td>
+            <td>Neptune Orbit</td>
+        </tr>
+        <tr>
+            <td>2 days*</td>
+            <td>Nereid amusement park</td>
+            <td>Nereid surface</td>
+        </tr>
         <tr>
           <td>12 year</td>
           <td>Return journey to Earth</td>
@@ -136,14 +148,17 @@ textElement.innerHTML = `
         </tr>
       </tbody>
     </table>
-</section>
+    <p>
+      * - optional add-ons  
+    </p>
+  </section>
 
-<section id="trip-cost">
+  <section id="trip-cost">
     <h2>Trip Cost</h2>
     <p>Experience the wonders of Neptune and its moons with our exclusive travel package.
         <br>
         <ul>
-          <li>Travel Duration: 12 years</li>
+          <li>Travel Duration: ~25 years</li>
           <li>Cost: $40 billion per person</li>
           <li>Inclusions: Accommodation, meals, exploration equipment, and return journey</li>
           <li>Optional Add-ons: Triton geyser expedition, Nereid moon orbit amusement park</li>
@@ -151,7 +166,24 @@ textElement.innerHTML = `
         <br>
         Join us for a experience like no other, and let Neptune's boundless expanse ignite your sense of wonder and adventure.
       </p>
-</section>
+  </section>
+  <footer>
+  <p>Email: <a href="mailto:solarsafarihelp@solarsafari.com">solarsafarihelp@solarsafari.com</a></p>
+  <p>Last Updated: <span id="currentDate"></span></p>
+  <p>Social media: @solarsafari</p>
+</footer>
+
+<script>
+  // Get current date and format it
+  const currentDate = new Date().toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+  });
+  
+  // Set current date to the element with id "currentDate"
+  document.getElementById('currentDate').textContent = currentDate;
+</script>
 </div>
 
 `;
@@ -205,7 +237,7 @@ function onSphereClick(event) {
         progress
       );
       sphere.rotation.y += 0.004;
-      camera.position.z -= 0.075;
+      camera.position.z += 0.03;
 
       if (progress < 1) {
         requestAnimationFrame(updateSpherePosition);

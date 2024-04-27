@@ -1,0 +1,152 @@
+/*add styling and stuff here so it is reflected across all pages*/
+
+/* Color scheme variables */
+:root {
+    --color1: #FF0000;
+    --color2: #00FF00;
+    --color3: #0000FF;
+}
+
+body{
+    background-color: #6767ff;
+}
+
+
+header {
+    text-align: center;
+
+    margin-top: 5%;
+}
+
+h1 {
+    background: linear-gradient(to right, #8186d3, #86b69d); /* Light gradient */
+    text-align: center;
+    width: 15%;
+    margin: 1% auto; /* Center the element horizontally and add margin */
+    padding: 1%;
+    border-radius: 1em; /* Rounded corners */
+}
+
+h2 {
+    text-decoration: underline;
+    text-align: center;
+    width: 15%;
+    margin: 1% auto; /* Center the element horizontally and add margin */
+    padding: 1%;
+}
+
+
+/* buttons */
+button {
+    background-color: #824caf;
+    border: none;
+    color: white;
+    padding: 1% 2%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    margin: .5%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 1em; /* Rounded corners */
+}
+button:hover {
+    background-color: #946fb3fa; 
+}
+
+/* Style for planet sections */
+#composition, #itinerary, #planet-info, #sightseeing, #trip-cost, #surface-cruise  {
+    background-color: #e6e6fa; /* Light Purple */
+    padding: 2em;
+    border-radius: 1em;
+}
+
+#planet-info{
+    text-align: center;
+}
+
+#sightseeing {
+    text-align: center;
+}
+
+#composition{
+    text-align: center;
+}
+
+#itinerary {
+    text-align: center;
+}
+
+
+
+#trip-cost li {
+    text-align: justify;
+}
+
+.cruise-text {
+    width: 60%;
+    float: left;
+    background-color:#e6e6fa
+}
+
+.cruise-img {
+    float: right;
+    width: 40%;
+
+}
+
+.neptune-itinerary-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.neptune-itinerary-table th, .neptune-itinerary-table td {
+    padding: 8px;
+    border-bottom: 1px solid black;
+}
+
+.neptune-itinerary-table th {
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.neptune-itinerary-table tbody tr:nth-child(odd) {
+    background-color: #8186d3;
+}
+
+.neptune-itinerary-table tr:nth-child(even) {
+    background-color: #86b69d;
+}
+
+.neptune-itinerary-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+
+section {
+    margin-bottom: 3em;
+}
+
+p {
+    word-wrap: break-word;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto; 
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+table {
+    margin: 0 auto; 
+}
+
+footer {
+    background: linear-gradient(to right, #8186d3, #86b69d); /* Light gradient */
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+}
