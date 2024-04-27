@@ -107,6 +107,7 @@ footer {
     text-align: center;
     width: 100%;
     margin-top: auto; /* Push footer to the bottom */
+    border-radius: 0;
 }
 
 /*section {
@@ -123,15 +124,16 @@ footer {
 
 #trip-cost {        
     width: 40%;
-    margin-bottom: 20px;
+    
     float: right;
 }
 
 #itinerary {
     width: 40%;
-    margin-bottom: 20px;
+   
     float: left;
 }
+
 
 .header h1 {
     position: fixed;
