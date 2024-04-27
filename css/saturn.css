@@ -5,14 +5,14 @@
 body {
     background-image: url('../img/saturnPlanet.jpeg');
     background-size: cover; /* Cover the entire background */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-position: center; /* Center the image */
-    background-attachment: fixed; /* Fixed background */
-    margin: 0; /* Reset default body margin */
-    padding: 0; /* Reset default body padding */
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Stack children vertically */
-    min-height: 100vh; /* Ensure body stretches to at least the height of the viewport */
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed; 
+    margin: 0; 
+    padding: 0; 
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
 }
 
 /* Style for saturn sections */
@@ -30,7 +30,7 @@ body {
 #rings-info img {
     float: right; /* Float the image to the right */
     margin-left: 20px; /* Add some space between the image and the text */
-    width: 15%; /* Set the width of the image to 50% of its container */
+    width: 15%; 
 }
 
 #moon-info {
@@ -68,10 +68,11 @@ body {
     background-color: #f2f2f2;
 }
 
-#trip-cost {        
+#trip-cost {
     width: 40%;
     margin-bottom: 20px;
     float: right;
+    text-align: left; /* Align text to the left */
 }
 
 #itinerary {
@@ -85,28 +86,26 @@ body {
     margin-bottom: 20px;
     float: right;
 }
-#moon1 {
-    float: left; /* Float the moon info section to the left */
-}
+
 
 #moon2 {
-    float: right; /* Float the other moon info section to the right */
+    float: right; /* moon to the right */
 }
 
 #moon-info img {
-    float: center; /* Float the image to the right */
+    float: center; /* Float image to the right */
     margin-left: 20px; /* Add some space between the image and the text */
-    width: 200px; /* Set the width of the image to 200 pixels */
-    height: auto; /* Maintain aspect ratio */
+    width: 200px; 
+    height: auto; /* Maintain  ratio */
 }
 
 .header h1 {
     position: fixed;
     top: 0;
     left: 0;
-    margin: 0; /* Remove default margin of h1 element */
-    font-size: 24px; /* Adjust font size as needed */
-    font-weight: bold; /* Adjust font weight as needed */
-    color: #000000; /* Set text color as needed */
+    margin: 0; 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #000000; 
     }
 
