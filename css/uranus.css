@@ -105,31 +105,31 @@ section {
     float: right;
 }
 
-.pluto-itinerary-table {
+.uranus-itinerary-table {
     width: 100%;
     border-collapse: collapse;
 }
 
-.pluto-itinerary-table th,
-.pluto-itinerary-table td {
+.uranus-itinerary-table th,
+.uranus-itinerary-table td {
     padding: 8px;
     border-bottom: 1px solid black;
 }
 
-.pluto-itinerary-table th {
+.uranus-itinerary-table th {
     color: black;
     font-weight: bold;
     border-bottom: 2px solid black;
 }
 
-.pluto-itinerary-table tbody tr:nth-child(odd) {
+.uranus-itinerary-table tbody tr:nth-child(odd) {
     background-color: #f5caaf;
 }
 
-.pluto-itinerary-table tr:nth-child(even) {
+.uranus-itinerary-table tr:nth-child(even) {
     background-color: #fad7c1;
 }
 
-.pluto-itinerary-table td:hover {
+.uranus-itinerary-table td:hover {
     background-color: #f2f2f2;
 }

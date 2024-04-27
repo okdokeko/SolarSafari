@@ -99,6 +99,14 @@ body {
     height: auto; /* Maintain  ratio */
 }
 
+footer {
+    background: linear-gradient(to right, #e2bfff, #ffe6b0); /* Light gradient */
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+}
+
 .header h1 {
     position: fixed;
     top: 0;
@@ -107,5 +115,5 @@ body {
     font-size: 24px; 
     font-weight: bold; 
     color: #000000; 
-    }
+}
 
