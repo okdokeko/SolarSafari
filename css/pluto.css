@@ -1,16 +1,3 @@
-body {
-    background-image: url('../img/pluto.jpg');
-    background-size: cover; /* Cover the entire background */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-position: center; /* Center the image */
-    background-attachment: fixed; /* Fixed background */
-    margin: 0; /* Reset default body margin */
-    padding: 0; /* Reset default body padding */
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Stack children vertically */
-    min-height: 100vh; /* Ensure body stretches to at least the height of the viewport */
-}
-
 header {
     text-align: center;
     margin-top: 5%;
