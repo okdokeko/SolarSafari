@@ -36,6 +36,7 @@ footer {
     text-align: center;
     width: 100%;
     margin-top: auto; /* Push footer to the bottom */
+    border-radius: 0;
 }
 
 .header h1 {
