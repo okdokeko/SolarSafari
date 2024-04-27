@@ -132,16 +132,11 @@ p {
     margin: 0 auto;
     padding: 1%;
 }
-
+/* Footer styles */
 footer {
-    background: linear-gradient(to right, #e2bfff, #ffe6b0);
-    /* Light gradient */
-    width: 85%;
-    margin: 0 auto;
+    background: linear-gradient(to right, #e2bfff, #ffe6b0); /* Light gradient */
     color: black;
     text-align: center;
-    padding: 2em;
-    border-radius: 3em;
-    margin-top: auto;
-    padding: 10px;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
 }
