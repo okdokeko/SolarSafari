@@ -1,2 +1,2 @@
 # SolarSafari
-Solar safari website
+Solar safari website for ISTA329
