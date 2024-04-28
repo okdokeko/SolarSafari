@@ -79,20 +79,24 @@ body {
     margin-bottom: 2em; /* Add margin at the bottom */
     float: right;
     text-align: left; /* Align text to the left */
-    margin-right: 20px;
+    margin-right: 60px;
 }
 
 #itinerary {
-    width: 48%;
+    width: 40%;
     margin-bottom: 2em; /* Add margin at the bottom */
     float: left;
-    margin-left: 20px;
+    margin-left: 60px;
 }
 
-#moon2 {        
+#moon2, #moon1 {        
     width: 40%;
     margin-bottom: 20px;
     float: right;
+}
+
+#moon1 {
+    float: left; /* moon to the left */
 }
 
 #moon2 {
